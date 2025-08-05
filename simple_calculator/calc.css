@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.inner{
+    width: 30%;
+    background-color: rgb(30, 138, 142);
+    height: 80%;
+    padding: 30px;
+    border-radius: 20px;
+}
+.inner .result{
+    height: 20%;
+    background-color: antiquewhite;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* overflow-x: scroll; */
+}
+.inner .calculate{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* justify-content: center;
+    align-items: center; */
+    gap: 5%;
+    height: 80%;
+    padding-top: 15px;
+    grid-auto-rows: 17%;
+    font-size: 30px;
+    /* background-color: azure; */
+}
+.inner p{
+    background-color: rgb(234, 146, 116);
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+.inner #add,#sub,#multi,#divide{
+    background-color: yellow;
+}
+.inner #clear{
+    background-color: red;
+    color: white;
+}
+.inner #delete{
+    background-color: orangered;
+    color: white;
+}
+.inner #eql{
+    background-color: green;
+    color: white;
+    grid-column: span 2;
+}
+.inner p:hover{
+    cursor: pointer;
+    transform: scale(1.14);
+}
+.inner p:active{
+    transform: scale(1);
+    background-color: rgb(156, 156, 255);
+}
+.inner #zero{
+    grid-column: 2;
+}
