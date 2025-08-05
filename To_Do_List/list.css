@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.outer{
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.outer h1{
+    margin: 20px;
+}
+.outer #enter{
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #9a9a9a;
+
+    &:focus{
+        outline: 2px solid blue;
+    }
+}
+.outer .content{
+    width: 70%;
+    min-height: 50%;
+}
+.outer .content button{
+    padding: 8px 17px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.outer .content #addBtn{
+    background-color: green;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 8px 25px;
+    color: antiquewhite;
+    /* border: 0px; */
+    /* margin-bottom: 15px; */
+    margin: 5px 0 20px 5px;
+}
+.content #addBtn:active{
+    background-color: rgb(69, 69, 69);
+}
+.content #delBtn{
+    background-color: red;
+    color: white;
+}
+.content #editBtn{
+    background-color: blue;
+    color: white;
+}
+.content .task{
+    width: 100%;
+    background-color: yellow;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+    border-radius: 20px;
+    /* position: relative; */
+}
+.content .task p{
+    margin-left: 5px;
+    /* border: 2px solid black; */
+    max-width: 80%;
+    max-height: 100%;
+    overflow: hidden;
+}
+.content .task button{
+    /* position: absolute;
+    right: 20px; */
+    margin-right: 5px;
+}
+
+
