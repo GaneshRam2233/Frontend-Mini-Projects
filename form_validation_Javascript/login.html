@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./login.js" defer></script>
+    <!-- defer keyword tells the browser to load js file only after loading the html file -->
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+
+    <div class="outer">
+        <form action="" id="form">
+            <h2>Login form</h2>
+            <div class="input-class">
+                <label for="username">Username </label>
+                <input type="text" name="username" id="username">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-class">
+                <label for="email">Email </label>
+                <input type="text" name="email" id="email">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-class">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-class">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="cpassword" id="cpassword">
+                <div class="error"></div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
